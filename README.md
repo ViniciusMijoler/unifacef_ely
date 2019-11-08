@@ -1,7 +1,7 @@
 # unifacef_ely
 
 A REACT NATIVE application, has a Home page, a Page about Uni-FACEF, a page about SI (Uni-FACEF course) and a page about 
-the developers
+the team
 
 To init execute the steps:
   - install the react-native environment (https://facebook.github.io/react-native/docs/getting-started) without expo
