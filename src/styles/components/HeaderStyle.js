@@ -13,6 +13,19 @@ export default (colorPrimary) => StyleSheet.create({
         justifyContent: 'flex-start',
         backgroundColor: colorPrimary,
     },
+    containerTitle: {
+        padding: 5,
+        width: '100%',
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: '#fff',
+        justifyContent: 'center'
+    },
+    imageCenter: {
+        width: 200,
+        height: 50,
+        resizeMode: 'contain',        
+    },
     icon: {
         alignSelf: 'flex-start',
         color: '#fff',
@@ -20,17 +33,11 @@ export default (colorPrimary) => StyleSheet.create({
         width: 50,
         padding: 15,
     },
-    iconIvisible: {
-        color: 'transparent',
-        height: 50,
-        width: 50,
-        padding: 15,
-    },
     title: {
-        flex: 1,
         color: '#fff',
-        fontSize: 20,
+        fontSize: 26,
+        fontWeight: 'bold',
         textAlign: 'center',
-        marginRight: 50
-    },  
+        color: colorPrimary
+    }
 })

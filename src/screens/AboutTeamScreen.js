@@ -24,20 +24,20 @@ class AboutTeamScreen extends React.Component {
         return (
             <View style={{flex: 1}}>
                 <Header primaryColor={this.primaryColor} backPress={this._backPress} title='Desenvolvedores'></Header>
-                <View style={{flex: 1}}>
-                    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+                <View style={{flex: 1 }}>
+                    <View style={{flex: 1, alignItems: 'center', justifyContent: 'flex-end', marginBottom: 20}}>
                         <View style={this.styles.containerImageUser}>
-                            <Image source={require('../assets/imgs/user.jpg')} style={this.styles.imageUser} />
+                            <Image source={require('../assets/imgs/vinicius.png')} style={this.styles.imageUser} />
                         </View>
                         <Text style={{textAlign: 'center'}}>Vinicius Mijoler Vilela de Andrade</Text>
                         <Text style={{textAlign: 'center'}}>19628</Text>
                     </View>
-                    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+                    <View style={{flex: 1, alignItems: 'center', justifyContent: 'flex-start', marginTop: 20}}>
                         <View style={this.styles.containerImageUser}>
-                            <Image source={require('../assets/imgs/user.jpg')} style={this.styles.imageUser} />
+                            <Image source={require('../assets/imgs/gabriel.png')} style={this.styles.imageUser} />
                         </View>
                         <Text style={{textAlign: 'center'}}>Gabriel de Freitas Pinheiro</Text>
-                        <Text style={{textAlign: 'center'}}>19628</Text>
+                        <Text style={{textAlign: 'center'}}>19231</Text>
                     </View>
                 </View>
             </View>

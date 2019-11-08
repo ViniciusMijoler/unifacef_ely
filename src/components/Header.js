@@ -4,6 +4,7 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 import {
     Text,
     View,
+    Image
 } from 'react-native'
 
 class Header extends Component {
@@ -17,12 +18,20 @@ class Header extends Component {
     }
 
     render() {
-        const title = this.props.title
+        const title = this.props.title;
+        const logo = require('../assets/imgs/unifacef.png');
         return (
-            <View style={this.styles.container}>
-                <Icon name='chevron-left' size={20} style={this.styles.icon} onPress={this.props.backPress} />
-                <Text style={this.styles.title}>{title}</Text>
-            </View>
+            <>
+                <View style={this.styles.container}>
+                    <Icon name='chevron-left' size={20} style={this.styles.icon} onPress={this.props.backPress} />
+                    <View style={{flex: 1, marginRight: 50, alignItems: 'center'}}>
+                        <Image source={logo} style={this.styles.imageCenter} />
+                    </View>
+                </View>
+                <View style={this.styles.containerTitle}>
+                    <Text style={this.styles.title}>{title}</Text>
+                </View>
+            </>
         )
     }
 }
