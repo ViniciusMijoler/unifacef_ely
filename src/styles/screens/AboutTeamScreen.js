@@ -1,17 +1,17 @@
 import { StyleSheet } from 'react-native'
 
-export default () => StyleSheet.create({
+export default (color) => StyleSheet.create({
     containerImageUser: {
-        width: 100,
-        height: 100,
+        width: 130,
+        height: 130,
         borderRadius: 100,
-        backgroundColor: '#fff',
+        backgroundColor: color,
         alignItems: 'center',
         justifyContent: 'center',
     },
     imageUser: {
-        width: 90,
-        height: 90,
+        width: 125,
+        height: 125,
         borderRadius: 100,
     }
 })

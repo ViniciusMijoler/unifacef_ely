@@ -13,7 +13,7 @@ class AboutTeamScreen extends React.Component {
     constructor(props) {
         super(props);
         this.primaryColor = '#344f8a';
-        this.styles = Styles();
+        this.styles = Styles(this.primaryColor);
     }
 
     _backPress = () => {
@@ -25,14 +25,14 @@ class AboutTeamScreen extends React.Component {
             <View style={{flex: 1}}>
                 <Header primaryColor={this.primaryColor} backPress={this._backPress} title='Desenvolvedores'></Header>
                 <View style={{flex: 1 }}>
-                    <View style={{flex: 1, alignItems: 'center', justifyContent: 'flex-end', marginBottom: 20}}>
+                    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
                         <View style={this.styles.containerImageUser}>
                             <Image source={require('../assets/imgs/vinicius.png')} style={this.styles.imageUser} />
                         </View>
                         <Text style={{textAlign: 'center'}}>Vinicius Mijoler Vilela de Andrade</Text>
                         <Text style={{textAlign: 'center'}}>19628</Text>
                     </View>
-                    <View style={{flex: 1, alignItems: 'center', justifyContent: 'flex-start', marginTop: 20}}>
+                    <View style={{flex: 1, alignItems: 'center', justifyContent: 'flex-start'}}>
                         <View style={this.styles.containerImageUser}>
                             <Image source={require('../assets/imgs/gabriel.png')} style={this.styles.imageUser} />
                         </View>

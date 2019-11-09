@@ -3,8 +3,8 @@ import { StyleSheet, Platform } from 'react-native';
 export default (colorPrimary) => StyleSheet.create({
     container: {
         marginTop: Platform.OS === 'ios' ? 20 : 0,
-        paddingTop: 5,
-        paddingBottom: 5,
+        paddingTop: 10,
+        paddingBottom: 10,
         paddingStart: 5,
         paddingEnd: 5,
         width: '100%',
